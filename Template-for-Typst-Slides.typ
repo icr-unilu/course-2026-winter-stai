@@ -55,7 +55,7 @@
     ),
     date: datetime.today().display("[day] [month repr:long] [year]"),
     institution: [University of Bologna],
-    logo: align(right)[#image("images/disi.svg", width: 55%)],
+    logo: align(right)[#image("images/logo_unilu_fr.svg", width: 55%)],
   ),
 )
 
