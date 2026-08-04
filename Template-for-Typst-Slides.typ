@@ -45,16 +45,17 @@
     show-bibliography-as-footnote: bibliography(title: none, "bibliography.bib"),
   ),
   config-info(
-    title: [Presentation Title],
-    subtitle: [Subtitle],
+    title: [STAI],
+    subtitle: [Selected Topics in Artificial Intelligence],
     author: author_list(
       (
-        (first_author("Nicolas Farabegoli"), "nicolas.farabegoli@unibo.it"),
-        ("Foo Bar", "foo@bar.com"),
+        (first_author("Matteo Magnini"), "matteo.magnini@uni.lu"),
+        ("Davide Liga", "davide.liga@uni.lu"),
+        ("Souvick Das", "souvick.das@uni.lu"),
       )
     ),
     date: datetime.today().display("[day] [month repr:long] [year]"),
-    institution: [University of Bologna],
+    institution: [University of Luxembourg],
     logo: align(right)[#image("images/logo_unilu_fr.svg", width: 55%)],
   ),
 )
