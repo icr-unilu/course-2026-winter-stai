@@ -235,6 +235,35 @@
     github.com/icr-unilu/course-2026-winter-stai/releases/latest
   ]
 
+== Assessment
+
+#grid(
+  columns: 2,
+  gutter: 2cm,
+
+  [
+    *30% – Participation in lectures*
+
+    Students are expected to attend all the lectures.
+
+    Moreover, the following aspects will be taken into account:
+
+    - active contribution to discussions
+    - asking questions and commenting on presentations
+  ],
+
+  [
+    *70% – Paper presentation*
+
+    Individual presentation of a selected research paper.
+
+    Among other aspects, we will primarily evaluate:
+
+    - clarity of the presentation
+    - depth of understanding of the paper’s content
+  ],
+)
+
 == Slide
 *Bold* and _italic_ text.
 

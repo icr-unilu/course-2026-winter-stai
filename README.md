@@ -6,7 +6,7 @@ This repository provides a starter slide deck, theme support, and helper macros 
 
 What is included
 -----------------
-- `Template-for-Typst-Slides.typ` — the main slide source you can edit (replace content with your slides).
+- `course-presentation.typ` — the main slide source you can edit (replace content with your slides).
 - `utils.typ` — helper macros used across slides (title, sections, footers, etc.).
 - `themes/` — theme files (colors, fonts, spacing). Edit or add themes here.
 - `images/` — sample images and icons used by the template.
@@ -20,15 +20,15 @@ From the repository root run:
 
 ```bash
 # Compile the default slide file to PDF
-typst compile Template-for-Typst-Slides.typ slides.pdf
+typst compile course-presentation.typ slides.pdf
 
 # If your Typst supports live watching, use:
-typst watch Template-for-Typst-Slides.typ slides.pdf
+typst watch course-presentation.typ slides.pdf
 ```
 
 Open `slides.pdf` to view the generated slides.
 
-If the repository contains a `slides-template.typ` file (older versions of this template), you can rename or copy it to start your deck. The primary file in this repo is `Template-for-Typst-Slides.typ`.
+If the repository contains a `slides-template.typ` file (older versions of this template), you can rename or copy it to start your deck. The primary file in this repo is `course-presentation.typ`.
 
 Customizing the template
 ------------------------
