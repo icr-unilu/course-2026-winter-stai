@@ -147,6 +147,7 @@
       radius: 0.6em,
       height: 6cm,
       [
+        //Remove the vertical space below if the link is on one line.
         #v(1.2em)
         #align(center)[
           #image("images/souvick_das.jpeg", width: 80%)
@@ -166,6 +167,20 @@
     )
   ],
 )
+
+== Time schedule
+
+- *First session:* \
+  16 September 2026, 15:45–17:15, room MSA‑3.170
+
+- *Regular weekly slot (from 2nd session onwards):* \
+  Every Thursday, 08:30–10:00, from 24 September 2026 to 17 December 2026, \
+  room MSA‑4.080 (Belval campus)
+
+- *Teaching staff rotation:* \
+  The three of us will alternate
+  as lecturers across the sessions.
+
 == Slide
 *Bold* and _italic_ text.
 
