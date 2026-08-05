@@ -179,7 +179,41 @@
 
 - *Teaching staff rotation:* \
   The three of us will alternate
-  as lecturers across the sessions.
+  as lecturers across the lectures.
+
+== Course structure
+
+#grid(
+  columns: 2,
+  gutter: 2cm,
+
+  [
+    *Part I – Introductory lectures \
+     (6 lectures)*
+
+    The first 6 lectures are classical frontal lectures.
+    Covered topics:
+
+    - Artificial Intelligence 101
+    - Current Trends in AI
+    - About Academic Research
+    - How to Recognise a Good Paper
+    - Systematic Literature Review
+    - Neuro‑Symbolic AI
+  ],
+
+  [
+    *Part II – Student seminar presentations (8 lectures)*
+
+    The remaining 8 lectures are dedicated to student presentations of research papers.
+
+    - If more than 8 students are enrolled:
+      30 minutes presentation + 15 minutes discussion.
+
+    - otherwise:
+      60 minutes presentation + 30 minutes discussion.
+  ],
+)
 
 == Slide
 *Bold* and _italic_ text.
