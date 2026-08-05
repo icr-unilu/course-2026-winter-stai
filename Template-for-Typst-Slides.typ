@@ -95,6 +95,7 @@
     #box(
       inset: (x: 0.8em, y: 0.8em),
       radius: 0.6em,
+      height: 6cm,
       [
         #align(center)[
           #image("images/matteo_magnini.jpeg", width: 80%)
@@ -119,6 +120,7 @@
     #box(
       inset: (x: 0.8em, y: 0.8em),
       radius: 0.6em,
+      height: 6cm,
       [
         #align(center)[
           #image("images/davide_liga.jpeg", width: 80%)
@@ -143,7 +145,9 @@
     #box(
       inset: (x: 0.8em, y: 0.8em),
       radius: 0.6em,
+      height: 6cm,
       [
+        #v(1.2em)
         #align(center)[
           #image("images/souvick_das.jpeg", width: 80%)
 
