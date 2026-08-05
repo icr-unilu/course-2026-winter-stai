@@ -83,58 +83,85 @@
 
 // #components.adaptive-columns(outline(title: none, indent: 1em))
 
-= Animation
+= About the course
 
-== Simple Animation
+== Teachers
 
-#pdfpc.speaker-note("This is a note that only the speaker will see.")
+#grid(
+  columns: 3,
+  gutter: 1.5cm,
 
-// #set text(font: "Fira Sans", weight: 350, size: 20pt)
-// #show math.equation: set text(font: "Fira Math")
-// #set strong(delta: 200)
-// #set par(justify: true)
+  [
+    #box(
+      inset: (x: 0.8em, y: 0.8em),
+      radius: 0.6em,
+      [
+        #align(center)[
+          #image("images/matteo_magnini.jpeg", width: 80%)
 
-// #set quote(block: true)
-// #show quote: set align(left)
-// #show quote: set pad(x: 2em, y: -0.8em)
+          #v(0.6em)
+          // Stile simile al first_author sulla title slide
+          #first_author("Matteo Magnini")
 
-// #set raw(tab-size: 4)
-// #show raw.where(block: true): block.with(
-//   fill: luma(240),
-//   inset: 1em,
-//   radius: 0.7em,
-//   width: 100%,
-// )
+          #v(0.3em)
+          Postdoctoral Researcher
 
-// #show bibliography: set text(size: 0.8em)
-// #show footnote.entry: it => {
-//   block(inset: (x: 2em, y: 0.1em))[#text(size: 0.75em)[#it.note.body]]
-// }
+          #v(0.5em)
+          #fa-icon("github")
+          #v(0.1em)
+          matteomagnini.github.io
+        ]
+      ],
+    )
+  ],
 
-// #let fcite(clabel) = {
-//   footnote(cite(form: "full", label(clabel)))
-// }
+  [
+    #box(
+      inset: (x: 0.8em, y: 0.8em),
+      radius: 0.6em,
+      [
+        #align(center)[
+          #image("images/davide_liga.jpeg", width: 80%)
 
-// #let author = block(inset: 0.1em)[
-//   #table(inset: 0.5em, stroke: none, columns: (auto, 4fr),  align: (left, left),
-//     [#alert[*Author 1*]], [`author1@mail.com`],
-//     [Author 2], [`author2@mail.com`],
-//     [Author 3], [`author3@mail.com`],
-//   )
-//   #place(right, dy:-1.5em)[
-//     #figure(image("images/disi.svg", width:40%))
-//   ]
-// ]
+          #v(0.6em)
+          // Stile standard (no first_author)
+          Davide Liga
 
-// #title-slide(
-//   title: "Slide Title",
-//   subtitle: "Subtitle",
-//   author: author,
-//   // date: datetime.today().display("[day] [month repr:long] [year]"),
-// )
+          #v(0.3em)
+          Postdoctoral Researcher
 
-// #new-section-slide("Slide section 1")
+          #v(0.5em)
+          #fa-icon("github")
+          #v(0.1em)
+          daviligade.github.io
+        ]
+      ],
+    )
+  ],
 
+  [
+    #box(
+      inset: (x: 0.8em, y: 0.8em),
+      radius: 0.6em,
+      [
+        #align(center)[
+          #image("images/souvick_das.jpeg", width: 80%)
+
+          #v(0.6em)
+          Souvick Das
+
+          #v(0.3em)
+          Postdoctoral Researcher
+
+          #v(0.5em)
+          #fa-icon("user-graduate")
+          #v(0.1em)
+          www.uni.lu/fstm-en/people/souvick-das
+        ]
+      ],
+    )
+  ],
+)
 == Slide
 *Bold* and _italic_ text.
 
