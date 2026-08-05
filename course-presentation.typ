@@ -52,13 +52,22 @@
         (first_author("Matteo Magnini"), "matteo.magnini@uni.lu"),
         ("Davide Liga", "davide.liga@uni.lu"),
         ("Souvick Das", "souvick.das@uni.lu"),
-      )
+      ),
+      logo: "images/logo_unilu_fr.svg",
+      width: 20%,
     ),
     date: datetime.today().display("[day] [month repr:long] [year]"),
     institution: [University of Luxembourg],
-    logo: align(right)[#image("images/logo_unilu_fr.svg", width: 55%)],
+    logo: context {
+     if utils.slide-counter.get().first() > 1 [
+        #align(right)[#image("images/logo_unilu_short.svg", height: 1cm)]
+      ] else [
+        #none
+      ]
+    },
   ),
 )
+
 
 #set text(font: "Fira Sans", weight: "light", size: 20pt)
 #show math.equation: set text(font: "Fira Math")
