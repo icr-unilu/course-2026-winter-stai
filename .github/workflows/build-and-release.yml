@@ -79,12 +79,11 @@ jobs:
         if: github.ref_name == 'master'
         run: touying compile course-presentation.typ --output build/index.html --format html --font-paths fonts
 
-      - name: Deploy to GitHub Pages
+      - name: Upload GitHub Pages artifact
         if: github.ref_name == 'master'
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: actions/upload-pages-artifact@v4
         with:
-          branch: gh-pages
-          folder: build
+          path: build
 
       - name: Release
         uses: softprops/action-gh-release@v2
@@ -93,3 +92,18 @@ jobs:
           name: "Release — ${{ steps.autotag.outputs.tag }}"
           files: "*.pdf"
           tag_name: ${{ steps.autotag.outputs.tag }}
+
+  deploy:
+    if: github.ref_name == 'master'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
