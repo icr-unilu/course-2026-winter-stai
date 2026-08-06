@@ -275,6 +275,86 @@
 
 == Table of contents
 
+Lecture slides and materials are available in the “Latest release” of the course repository:
+#link("https://github.com/icr-unilu/course-2026-winter-stai/releases/latest")[
+  github.com/icr-unilu/course-2026-winter-stai/releases/latest
+]
+
+#v(0.8em)
+
+#grid(
+  columns: 2,
+  gutter: 2cm,
+
+  [
+    *Lecture slides*
+
+    - #fa-icon("file-pdf")
+      #link("https://github.com/icr-unilu/course-2026-winter-stai/releases/latest/download/01-artificial-intelligence-101.pdf")[
+        01 – Artificial Intelligence 101
+      ]
+
+    - #fa-icon("file-pdf")
+      #link("https://github.com/icr-unilu/course-2026-winter-stai/releases/latest/download/02-current-trends-in-ai.pdf")[
+        02 – Current Trends in AI
+      ]
+
+    - #fa-icon("file-pdf")
+      #link("https://github.com/icr-unilu/course-2026-winter-stai/releases/latest/download/03-about-academic-research.pdf")[
+        03 – About Academic Research
+      ]
+
+    - #fa-icon("file-pdf")
+      #link("https://github.com/icr-unilu/course-2026-winter-stai/releases/latest/download/04-how-to-recognise-a-good-paper.pdf")[
+        04 – How to Recognise a Good Paper
+      ]
+
+    - #fa-icon("file-pdf")
+      #link("https://github.com/icr-unilu/course-2026-winter-stai/releases/latest/download/05-systematic-literature-review.pdf")[
+        05 – Systematic Literature Review
+      ]
+
+    - #fa-icon("file-pdf")
+      #link("https://github.com/icr-unilu/course-2026-winter-stai/releases/latest/download/06-neuro-symbolic-ai.pdf")[
+        06 – Neuro‑Symbolic AI
+      ]
+  ],
+
+  [
+    *Other material*
+
+    - #fa-icon("file-pdf")
+      #link("https://github.com/icr-unilu/course-2026-winter-stai/releases/latest/download/paper-list.pdf")[
+        Paper list
+      ]
+
+    - #fa-icon("graduation-cap")
+      #link("https://scholar.google.com")[
+        Google Scholar
+      ]
+
+    - #fa-icon("database")
+      #link("https://dblp.org")[
+        DBLP
+      ]
+
+    - #fa-icon("chart-line")
+      #link("https://www.scimagojr.com")[
+        Scimago Journal & Country Rank
+      ]
+
+    - #fa-icon("layer-group")
+      #link("http://portal.core.edu.au/conf-ranks/")[
+        CORE Conference Rankings
+      ]
+
+    - #fa-icon("globe")
+        #link("https://www.scopus.com")[
+        Scopus
+    ]
+  ],
+)
+
 
 
 // #slide[
