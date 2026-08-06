@@ -77,7 +77,7 @@ jobs:
 
       - name: Build HTML File
         if: github.ref_name == 'master'
-        run: touying compile course-presentation.typ --output build/index.html --format html --font-paths fonts --title "STAI – course presentation"
+        run: touying compile course-presentation.typ --output build/index.html --format html --font-paths fonts
 
       - name: Deploy to GitHub Pages
         if: github.ref_name == 'master'

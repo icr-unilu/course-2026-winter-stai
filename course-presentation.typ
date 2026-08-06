@@ -232,8 +232,8 @@
     moodle.uni.lu/course/view.php?id=81
   ]
 
-- *GitHub course page* \
-  Overview of the course and additional material: \
+- *GitHub page* \
+  Overview of the course and additional material (this slide only): \
   #link("https://icr-unilu.github.io/course-2026-winter-stai")[
     icr-unilu.github.io/course-2026-winter-stai
   ]
@@ -273,42 +273,9 @@
   ],
 )
 
-== Slide
-*Bold* and _italic_ text.
+== Table of contents
 
-This is a citation #cite(label("DBLP:journals/fgcs/FarabegoliPCV24")).
-This another citation #cite(label("DBLP:journals/iot/FarabegoliPCV24"))
 
-#alert[This is an alert.]
-
-== Code slide
-
-```kotlin
-fun main() {
-    println("Hello, world!")
-    for (i in 0..9) {
-        println(i)
-    }
-    println("Goodbye, world!")
-}
-```
-
-== Title and subtitle slide
-
-=== This is a subtitle
-
-#lorem(24)
-
-=== This is a subtitle
-
-#lorem(34)
-
-== FontAwesome icons
-
-=== Icon in a title #fa-java()
-
-#fa-icon("github") -- Github icon \
-#fa-icon("github", fill: blue) -- Github icon blue fill
 
 // #slide[
 //   #bibliography("bibliography.bib")
