@@ -29,12 +29,14 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y fonts-inter fonts-firacode
+          mkdir -p fonts
           wget https://github.com/FortAwesome/Font-Awesome/releases/download/6.4.2/fontawesome-free-6.4.2-desktop.zip
           wget https://github.com/bBoxType/FiraSans/archive/master.zip
-          unzip fontawesome-free-6.4.2-desktop.zip
-          unzip master.zip
-          sudo mv fontawesome-free-6.4.2-desktop /usr/share/fonts
-          sudo mv FiraSans-master /usr/share/fonts
+          unzip -q fontawesome-free-6.4.2-desktop.zip
+          unzip -q master.zip
+          find fontawesome-free-6.4.2-desktop -type f \( -name "*.otf" -o -name "*.ttf" \) -exec cp {} fonts/ \;
+          find FiraSans-master -type f \( -name "*.otf" -o -name "*.ttf" \) -exec cp {} fonts/ \;
+          sudo cp fonts/* /usr/share/fonts/
           sudo fc-cache -fv
 
       - name: Set up Python
