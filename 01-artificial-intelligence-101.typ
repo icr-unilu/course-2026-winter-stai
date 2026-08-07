@@ -87,3 +87,89 @@
 // #set heading(numbering: numbly("{1}.", default: "1.1"))
 
 #title-slide()
+
+= History of Artificial Intelligence
+
+== Authorship & Disclaimer
+
+#grid(
+  columns: 2,
+  gutter: 2cm,
+
+  [
+    *Authorship note*
+
+    Parts of these slides are adapted from lecture material originally
+    developed by *_Prof. Andrea Omicini_*.
+
+    The current version has been updated, restructured, and extended
+    for this course.
+  ],
+
+  [
+    *Disclaimer*
+
+    Possible errors, omissions, or inaccuracies may be present in this material.
+
+    I take full responsibility for any mistakes, and I welcome corrections if you spot any.
+  ],
+)
+
+//──────────────────────────────────────────────────────────────
+// THE RISE OF AI
+//──────────────────────────────────────────────────────────────
+
+== The Rise of AI
+
+#grid(
+  columns: 2,
+  gutter: 2cm,
+
+  [
+    *Historical context*
+
+    - The idea of *thinking machines* predates digital computers.
+    - Modern AI emerges in the *1950s*, when electronic computers
+      become programmable and (slowly) more accessible.
+    - Researchers start asking a concrete question:
+
+      _"If a computer can calculate, can it also *think*?"_
+  ],
+
+  [
+    *Key intuition*
+
+    Instead of just doing numerical calculations, computers can:
+
+    - manipulate symbols,
+    - follow logical rules,
+    - search through spaces of possibilities,
+    - learn patterns from data.
+
+     The term *"Artificial Intelligence"* is coined in this context to name the new research area.
+  ],
+)
+
+//──────────────────────────────────────────────────────────────
+// DARTMOUTH WORKSHOP
+//──────────────────────────────────────────────────────────────
+
+== The Dartmouth Summer Research Project (1956)
+
+*Dartmouth College, New Hampshire – Summer 1956*
+
+- Organised by *John McCarthy*.
+- A small group of researchers meets for a _"Summer Research Project
+  on Artificial Intelligence"_.
+- Aim: _"… to find how to make machines use language, form abstractions,
+  and concepts, solve kinds of problems now reserved for humans…"_
+
+- Participants included:
+  - *Marvin Minsky* – later co‑founder of the MIT AI Lab.
+  - *Allen Newell & Herbert A. Simon* – authors of the
+    *Logic Theorist*, often considered the first AI program
+    (an automatic theorem prover, 1956).
+  - *John McCarthy* – later inventor of *LISP*, one of the
+    earliest programming languages designed for AI.
+
+
