@@ -87,3 +87,36 @@
 // #set heading(numbering: numbly("{1}.", default: "1.1"))
 
 #title-slide()
+
+#slide[
+= Paper List
+
+#let paper(title, authors, year, abstract) = [
+#block(
+inset: (x: 0.8em, y: 0.55em),
+radius: 0.4em,
+fill: luma(245),
+width: 100%,
+)[
+#text(weight: "bold", size: 1.05em)[#title] 
+#text(size: 0.75em, fill: gray)[#authors · #year] 
+#v(0.25em)
+#text(size: 0.8em)[#abstract]
+]
+#v(0.6em)
+]
+
+#paper(
+[Efficient Estimation of Word Representations in Vector Space],
+[Tomas Mikolov, Kai Chen, Greg Corrado, Jeffrey Dean],
+2013,
+[Introduces word2vec, a simple and efficient method for learning dense vector representations of words from large text corpora. The resulting embeddings capture useful semantic and syntactic relationships between words.]
+)
+
+#paper(
+[Attention Is All You Need],
+[Ashish Vaswani et al.],
+2017,
+[Introduces the Transformer, an architecture based on the so-called “attention mechanisms”, removing the need for recurrent or convolutional layers. It achieves strong results in machine translation while allowing much more parallel training. This opened the way for the development of modern LLMs.]
+)
+]
