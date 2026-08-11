@@ -1,6 +1,7 @@
-#import "@preview/touying:0.6.3": *
+#import "@preview/touying:0.7.4": *
 #import themes.metropolis: *
-#import "@preview/fontawesome:0.6.0": *
+#import "@preview/board-n-pieces:0.9.0": *
+#import "@preview/fontawesome:0.6.2": *
 #import "@preview/ctheorems:1.1.3": *
 #import "@preview/numbly:0.1.0": numbly
 #import "utils.typ": *
@@ -262,3 +263,52 @@
 )
 
 = Main Themes in Early AI
+
+== Search (Part I)
+
+*Searching for solution(s)*
+
+- from the current stato to a _desired_ one (*goal*)
+- based on a _repertoire_ of possible actions
+- modelled with
+    - _pre-condtions_ (a.k.a., states in which an action can be applied)
+    - _effects_ (a.k.a., states resulting from applying an action)
+- construction of a _search tree_
+    - from the initial state as its root (*forward search*)
+    - from the final state as its root (*backward search*)
+
+== Search (Part II)
+
+#grid(
+  columns: 2,
+  gutter: 2cm,
+
+  [
+    *Explosion of the search space*
+
+    - combinatorial explosion
+    - e.g., in the game of chess:
+      - 20 legal moves in the first semi-move (w)
+      - 20 legal moves in the first semi-move (b)
+      - we already have 400 possible states after the first full move
+    - heuristic as rule of thumb to guide the search
+  ],
+
+  [
+    #let starting_moves = (
+      "a2a3", "b2b3", "c2c3", "d2d3", "e2e3", "f2f3", "g2g3", "h2h3",
+
+      "a2a4", "b2b4", "c2c4", "d2d4", "e2e4", "f2f4", "g2g4", "h2h4",
+
+      "b1a3", "b1c3", "g1f3", "g1h3"
+    )
+
+    #board(
+      starting-position,
+      arrows: starting_moves,
+      arrow-fill: rgb("ff0000").transparentize(30%),
+      arrow-thickness: 0.12cm,
+      square-size: 1.2cm
+    )
+  ]
+)
