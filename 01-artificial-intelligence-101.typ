@@ -88,7 +88,7 @@
 
 #title-slide()
 
-= History of Artificial Intelligence
+= The Raise of Artificial Intelligence
 
 == Authorship & Disclaimer
 
@@ -119,7 +119,7 @@
 // THE RISE OF AI
 //──────────────────────────────────────────────────────────────
 
-== The Rise of AI
+== Golden Age
 
 #grid(
   columns: 2,
@@ -171,5 +171,63 @@
     (an automatic theorem prover, 1956).
   - *John McCarthy* – later inventor of *LISP*, one of the
     earliest programming languages designed for AI.
+
+//──────────────────────────────────────────────────────────────
+// General AI
+//──────────────────────────────────────────────────────────────
+
+== General AI (Part I)
+
+#grid(
+  columns: 2,
+  gutter: 2cm,
+
+  [
+    *General AI*
+
+    - Ultimate goal: create _general-purpose_ intelligence machines
+    - but _poor understanding_ of (human) intelligence
+    - so, AI focussed then on _intelligent components_
+
+  ],
+
+  [
+    *Components of intelligence*
+
+    - Perception
+    - Learning
+    - Reasoning
+    - Planning
+    - Natural language understanding
+  ]
+)
+
+== General AI (Part II)
+
+#grid(
+  columns: 2,
+  gutter: 2cm,
+
+  [
+    *Perception*
+
+    - understanding the _environment_
+    - through _sensors_ of various kind
+    - _interpreting_ the overall situation
+
+    #v(0.6em)
+
+    *(Machine) Learning*
+
+    - learning from _data_
+    - building _models_
+    - making _predictions_
+
+  ],
+
+  [
+    #image("images/01/all-models-are-wrong-but-some-are-useful.jpeg", width: 80%)
+  ]
+)
 
 
