@@ -89,8 +89,6 @@
 
 #title-slide()
 
-= The Raise of Artificial Intelligence
-
 == Authorship & Disclaimer
 
 #grid(
@@ -119,6 +117,9 @@
 //──────────────────────────────────────────────────────────────
 // THE RISE OF AI
 //──────────────────────────────────────────────────────────────
+
+
+= The Raise of Artificial Intelligence (1950s - 1973)
 
 == Golden Age
 
@@ -312,3 +313,70 @@
     )
   ]
 )
+
+== Search (Part III)
+
+*Deep Blue#cite(label("CAMPBELL200257")) vs. Garry Kasparov (1996)*
+
+#align(center)[
+    #image("images/01/deep-blue-vs-kasparov-1996.jpg", height: 60%)
+]
+
+
+== Planning (Part I)
+
+*SHRDLU#cite(label("doi:https://doi.org/10.1002/0470018860.s00056"))*
+
+- the Block Word is a _virtual environment_ where objects are arramged on a table
+- SHRDLU was aimed at arranging the objects based on user's instructions
+- interaction via natural language commands
+- the system was using a simulated robot arm to manipulate the objects
+- practical reasoning (reasoning towards action)
+
+== Planning (Part II)
+
+#grid(
+  columns: 2,
+  gutter: 2cm,
+
+  [
+    *SHAKEY with STRIPS#cite(label("doi:https://doi.org/10.1002/0470018860.s00003"))*
+
+    - remote controlled mobile robot
+    - moving objects in a room
+    - planning with STRIPS
+
+  ],
+
+    [
+        #image("images/01/shakey-with-strips.png")
+    ]
+)
+
+
+= The AI Winter (1974–1993)
+
+== Complexity (Part I)
+
+*Microworld does not scale up to the real world*
+
+- solutions workin in oversimplified environments do notwork in the real world
+- qualitative or quantitative issue?
+
+#v(0.6em)
+
+*NP-complete problems*
+
+- non-deterministic Polynomial-time complete problems are
+  - easy to check (verify) a solution
+  - but hard to find a solution in reasonable time
+  - e.g., the Travelling Salesman Problem (TSP)#cite(label("PAPADIMITRIOU1977237"))
+
+== Complexity (Part II)
+
+*Disillusionment*
+
+- Too much hype at the beginning
+- in few decades, nothing was accomplished in the real world
+- e.g., the General Problem Solver (GPS)#cite(label("newell1959report")) never worked in real-world scenarios
+- cut in funding and interest in AI research
