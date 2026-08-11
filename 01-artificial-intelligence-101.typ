@@ -196,8 +196,8 @@
 
     - Perception
     - Learning
+    - Problem solving & Planning
     - Reasoning
-    - Planning
     - Natural language understanding
   ]
 )
@@ -230,4 +230,35 @@
   ]
 )
 
+== General AI (Part III)
 
+#grid(
+  columns: 2,
+  gutter: 2cm,
+
+  [
+    *Problem solving & Planning*
+
+    - finding a sequence of actions to reach a _goal_
+    - based on a _repertoire_ of possible actions
+
+    #v(0.6em)
+
+    *Reasoning*
+
+    - _representing knowledge_
+    - _inferring_ new knowledge from existing knowledge
+    - following predefined _rules_
+
+  ],
+
+  [
+    *Natural Language Understanding*
+
+    - understanding human language
+    - in written or spoken form
+    - engage in a _dialogue_ with humans
+  ]
+)
+
+= Main Themes in Early AI
