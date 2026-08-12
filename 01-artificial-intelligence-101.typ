@@ -380,3 +380,62 @@
 - in few decades, nothing was accomplished in the real world
 - e.g., the General Problem Solver (GPS)#cite(label("newell1959report")) never worked in real-world scenarios
 - cut in funding and interest in AI research
+
+== Knowledge (Part I)
+
+*A way out*
+
+- humans do not explore all the possibilities to find solutions
+- they us _domain knowledge_ to cut down the search space
+  - e.g., in chess, a player can play the whole opening by heart
+  - #alert("knowledge is not the only way") (e.g., _subconscious pattern recognition_)
+- exploiting explicit domain knowledge representation
+
+== Knowledge (Part II)
+
+*Expert systems*
+
+  - no longer General AI, but tailored to _specific domains_
+  - finally facing real-world problems successfully
+  - _eliciting knowledge_ from human experts in terms of _rules_
+  - able to answer to human questions (with _explanations_)
+  - coping with _uncertainty_
+
+#grid(
+  columns: 2,
+  gutter: 2cm,
+
+  [
+    *MYCIN#cite(label("shortliffe1976computer"))*
+
+    - ~200 rules about blood diseases
+    - meant to be a doctor's assistant
+  ],
+
+  [
+    *CYC#cite(label("DBLP:journals/aim/LenatPS86"))*
+
+    - a large knowledge base of common sense
+    - wanted to cover everything, too ambitious
+  ]
+
+)
+
+== Computational Logic
+
+*Logic Programming*
+
+- knowledge representation and inference based on logic
+- computing with logic, e.g., Prolog#cite(label("10.1145/234286.1057820"))
+    - based on _Horn clauses_
+    - #alert("logic theory") against which _goals_ are proved
+    - computation as goal demonstration
+- heavy computational cost
+- if you want to try yourself #link("https://github.com/tuProlog")
+
+== Bayesian Reasoning
+
+*Coping with uncertainty*
+
+- humans do not deal well with uncertainty
+- let's do a test: #link("https://www.menti.com/aly9faf38rdo")
