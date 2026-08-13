@@ -119,7 +119,7 @@
 //──────────────────────────────────────────────────────────────
 
 
-= The Raise of Artificial Intelligence (1950s - 1973)
+= The Raise of Artificial Intelligence (1950s - 1970s)
 
 == Golden Age
 
@@ -354,7 +354,7 @@
 )
 
 
-= The AI Winter (1974–1993)
+= The AI Winter (1970s – 1990s)
 
 == Complexity (Part I)
 
@@ -508,3 +508,87 @@ If you want to try yourself: #link("https://www.braitenberg.world/")[braitenberg
     Example of a subsumption architecture
   ]
 )
+
+= The Modern Era of AI (2000s – present)
+
+== Machine Learning (Part I)
+
+*Machine learning (ML)*
+
+- ML aims at computers that learn knowledge they have not be explicitly told#cite(label("DBLP:books/lib/MichalskiA84"))
+- how they learn? Tipically through _training_
+
+#v(0.6em)
+
+#grid(
+  columns: 3,
+  gutter: 0.5cm,
+
+  [
+    *Supervised learning*
+
+    - from labelled data
+    - classification
+    - regression
+  ],
+
+  [
+    *Unsupervised learning*
+
+    - from unlabelled data
+    - clustering
+    - dimensionality reduction
+  ],
+
+  [
+    *Reinforcement learning*
+
+    - interacting with the environment
+    - games
+    - robotics
+  ]
+)
+
+== Machine Learning (Part II)
+
+*Success factors of ML*
+
+- _scientific breakthroughs_ in algorithms and models, #alert("deep learning")
+- _availability of data_ (e.g., from the web, social media, sensors)
+- _availability of computing power_ (e.g., GPUs, TPUs, cloud computing)
+
+== Machine Learning (Part III)
+
+*Neural networks*
+
+- inspired by the human brain but with _notable differences_
+- set of interconnected layers of artificial *neurons*
+- learning by adjusting the _weights_ of the connections between neurons and _biases_
+- many kinds of neural networks
+  - feedforward
+  - recurrent
+  - convolutional
+  - transformers
+
+== Machine Learning (Part IV)
+
+*Triumph of ML*
+
+- in 2014 DeepMind demonstrated a system learning to play Atari games from the pixels and accessing the scores, using the same controls as humans#cite(label("DBLP:journals/corr/MnihKSGAWR13"))
+- acquired by Google, DeepMind developed AlphaGo, a system that defeated the Go world champion Lee Sedol in 2016#cite(label("DBLP:journals/nature/SilverHMGSDSAPL16"))
+  - _deep neural networks_ with #alert("self-training")
+  - Go search space is much larger than chess, so brute-force based search is not enough to beat a human champion
+  - this made everyone know that there were _no known limits_ to the ability that machine learning could achieve
+
+
+== AI today
+
+*AI everywhere#cite(label("wooldridge2018artificial"))*
+
+- digital assistants like Siri, Alexa and Cortana
+- face recognition software in social media
+- car satellite navigation systems
+- recommendations systems in online stores
+- _unmanned aerial vehicles (UAV)_ guided by AI algorithms
+- large language models (LLMs) pervading any application
+- agentic AI
