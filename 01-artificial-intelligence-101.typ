@@ -437,5 +437,74 @@
 
 *Coping with uncertainty*
 
-- humans do not deal well with uncertainty
-- let's do a test: #link("https://www.menti.com/aly9faf38rdo")
+- humans do not deal well with uncertainty and probabilities#cite(label("doi:10.1126/science.185.4157.1124"))
+- _rational decisions_ are better than human decisions in most fields
+- Thomas Bayes developed the mathematical theory in the 18th century
+- a couple of centuries later, it was applied to AI to make #alert("Bayesian reasoning"):
+  - Bayesian networks
+  - Naive Bayes classifier
+
+== Nouvelle AI and Robots (Part I)
+
+*Against reasoning, against representation#cite(label("DBLP:conf/ijcai/Brooks91"))#cite(label("DBLP:journals/ai/Brooks91"))*
+
+- against knowledge-based and logic-based AI
+- #alert("perceive and react") as the main cycle for robots in the real world
+- focus on the expected specific _intelligent behaviours_
+- _subsumption architecture_#cite(label("DBLP:journals/trob/Brooks86")), a.k.a., who has the priority
+
+== Nouvelle AI and Robots (Part II)
+
+*Valentino Braitenberg's Vehicles#cite(label("DBLP:journals/ai/Stefik85a"))*
+
+If you want to try yourself: #link("https://www.braitenberg.world/")[braitenberg.world]
+
+#align(center)[
+    #grid(
+      columns: 4,
+      gutter: 0.5cm,
+
+      [
+        #image("images/01/braitenberg_vehicle_2a.png", height: 10em)
+        #v(0.6em)
+        Fear
+      ],
+
+      [
+        #image("images/01/braitenberg_vehicle_2b.png", height: 10em)
+        #v(0.6em)
+        Aggression
+      ],
+
+      [
+          #image("images/01/braitenberg_vehicle_3a.png", height: 10em)
+          #v(0.6em)
+          Love
+      ],
+
+      [
+          #image("images/01/braitenberg_vehicle_3b.png", height: 10em)
+          #v(0.6em)
+          Exploration
+      ]
+    )
+]
+
+== Nouvelle AI and Robots (Part III)
+
+#grid(
+  columns: 2,
+  gutter: 2cm,
+
+  [
+    #image("images/01/reinforcement_learning_diagram.svg", height: 15em)
+    #v(0.6em)
+    Reinforcement learning loop
+  ],
+
+  [
+    #image("images/01/subsumption_architecture.png", height: 15em)
+    #v(0.6em)
+    Example of a subsumption architecture
+  ]
+)
