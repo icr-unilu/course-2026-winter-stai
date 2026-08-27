@@ -227,5 +227,96 @@
 - grants, typically individual
 
 
-== Artefacts
+== Artefacts (Part 1)
+
+* Shareable resources *
+
+- an idea is not a scientific result per se
+- a scientific result is something that
+  - is understandable by other researchers
+  - sharaeble and accessible by members of the scientific community
+  - has enough information upon its results and therefore _can be *REPRODUCED*_ and _possibly *CONFUTED*_ by other researchers#cite(label("popper2002"))
+
+== Artefacts (Part 2)
+
+* Articles & Books*
+
+- articles (a.k.a. papers) sre the primary sharable form of scientific results, collected and published:
+  - in scientific journals
+  - in proceedings of scientific conferences and workshops
+  - as chapter of collections in books
+- when _stable_, results are often presented in extended form in scientific monographies
+
+
+== Publication Process
+
+* Public control *
+- before something is published:
+  - an article is _submitted_ to a _*review process*_
+  - review is conducted by experts in the field (a.k.a. _peers_)
+  - in case the article is considered worth for publication, it might anyway be revised according to the reviewer’s indications, and finally accepted for publication
+- when published, the article represents a piece of _scientific literature_
+- public presentation is essential in case of conferences or workshops
+
+
+== Publishers (Part 1)
+
+* Scientific literature is published by publishers *
+
+- once survived the peer review step, proceedings, journal issues, collections and monographies are ready as scientific products
+  - _but not immiediately as *typographic* ones_
+- often, publishers intervene on the form of the scientific material before it is published
+  - language, formatting, cover, illustrations, ...
+  - with the consent of authors / editors
+
+== Publishers (Part 2)
+
+* The role of publishers *
+
+- Goals
+  - earn money
+  - earning reputation through high-quality publications (to earn more money)
+- publishers dictate the timing and pace of publication, the total number og pages
+  - provide suggestions on the general goals of a published volume / journal
+- Publishers also
+    - take care of organisational issues, and govern social & economical factors
+    - take care of dissemination
+    - rule _access_ to scientific litterature
+
+// Skip dissemination
+
+== Citations (Part 1)
+
+* The role of citations *
+
+- the main measure of dissemination is _*citation*_
+  - paper A cites paper B in its _bibliography_ or _reference_ section
+- bibliography is important to understand the paper
+  - context, background, and related work (we do not want to reinvent the wheel)
+- citations are a measure of scientific _*impact*_
+  - citation is not necessarily a sign od approval!
+  - it is a good measure of the _relevance_ of a scientific result
+
+== Citations (Part 2)
+
+
+#grid(
+  columns: 2,
+  gutter: 2cm,
+
+  [
+    * Web resources for paper and citations *
+
+    - Google Scholar #link("https://scholar.google.com")[https://scholar.google.com]
+    - DBLP #link("https://dblp.org")[https://dblp.org]
+    - Web of Science #link("https://www.webofscience.com")[https://www.webofscience.com]
+    - Scopus #link("https://www.scopus.com")[https://www.scopus.com]
+  ],
+  [
+    #align(center)[
+        #image("images/03/citation-stonks.jpg", width: 95%)
+    ]
+  ]
+)
+
 
