@@ -307,10 +307,14 @@
   [
     * Web resources for paper and citations *
 
-    - Google Scholar #link("https://scholar.google.com")[https://scholar.google.com]
-    - DBLP #link("https://dblp.org")[https://dblp.org]
-    - Web of Science #link("https://www.webofscience.com")[https://www.webofscience.com]
-    - Scopus #link("https://www.scopus.com")[https://www.scopus.com]
+    - _Google Scholar_
+      - #link("https://scholar.google.com")[https://scholar.google.com]
+    - _DBLP_
+      - #link("https://dblp.org")[https://dblp.org]
+    - _Web of Science_
+      - #link("https://www.webofscience.com")[https://www.webofscience.com]
+    - _Scopus_
+       - #link("https://www.scopus.com")[https://www.scopus.com]
   ],
   [
     #align(center)[
@@ -319,4 +323,71 @@
   ]
 )
 
+== Access (Part 1)
 
+* Online access to sceintific literature *
+
+- traditional means are still widespread
+  - participation to scientific events
+  - access to printed materials
+- _online_ access has gained more and more ground
+- Internet has obviously a key role
+  - it allows an unprecedented flow of dissemination and access to technical results (publised or yet unpublished)
+  - and sometimes it is the only way to access them, especially after COVID-19
+- all international publishers have online publication sites
+- most of the relevant material is accessible online (but not always for free)
+
+== Access (Part 2)
+
+#grid(
+  columns: 2,
+  gutter: 2cm,
+
+  [
+    * Open Access *
+
+    - responds to the fundamental need of science to be shared
+    - institutions can become publishers
+    - publishers can make it part of their business model making authors & institutions pay for public access
+    - Budapest Open Access Initiative#cite(label("BOAI2002"))
+    - Berlin Declaration on Open Access#cite(label("MaxPlanck2003"))
+  ],
+  [
+    * Paywall *
+
+    - imposed by publishers as part of their business model
+    - institutions mostly pay huge money to access some
+    - most scientific literature is probuced by publicly-funded institutions
+    - yet they have to pay in order to access their own products behind paywalls
+  ]
+)
+
+== Digital Repositories
+
+#grid(
+  columns: 2,
+  gutter: 2cm,
+
+  [
+    * What for *
+
+    - share results before any form of scientific publications
+    - make publicly shareable versions of scientific papers behind paywall
+    - some examples:
+      - arXiv #link("https://arxiv.org")[https://arxiv.org]
+      - Zenodo #link("https://zenodo.org")[https://zenodo.org]
+  ],
+  [
+    * Limitations *
+
+    - in general just _technical reports_ or _preprints_
+    - without validation by the scientific community, they are not scientific papers
+    - unless the paper has been published properly elsewhere
+  ]
+)
+
+= Dealing with papers
+
+== How to recognise a good paper
+
+== how to read a paper
