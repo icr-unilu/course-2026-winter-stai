@@ -429,7 +429,7 @@
 )
 
 
-== How to recognise a good paper
+== How to recognise a good paper (Part 1)
 
 * Rules of thumb *
 
@@ -441,5 +441,60 @@
   - datasets and code should be public
   - there must be statistical tests
 - comparison with other approaches in the literature
-- the paper is in a top-tier conference or journal in the field
+- the paper is in a _top-tier_ conference or journal in the field
+
+== How to recognise a good paper (Part 2)
+
+* Scimago Journal & Country Rank (SJR) *
+
+#grid(
+  columns: 2,
+  gutter: 2cm,
+
+  [
+    #align(center)[
+        #image("images/03/scimago-ranking-example-1.png", width: 90%)
+    ]
+  ],
+  [
+    #align(center)[
+        #image("images/03/scimago-ranking-example-2.png", width: 95%)
+    ]
+  ]
+)
+
+== How to recognise a good paper (Part 3)
+
+* ICORE Conference Ranking *
+
+#align(center)[
+    #image("images/03/icore-ranking-example.png", width: 95%)
+]
+
+
+== Presenting a paper (Part 1)
+
+* Objectives *
+
+- you must transmit in a clear way:
+  - the _context_ where the paper is set
+  - the _problem addressed_ by the paper
+  - the proposed solution
+  - how the solution is _validated_
+  - results and findings
+- the audience is composed of your peers
+- they are supposed to understand you
+- you can use slides to support your presentation
+
+== Presenting a paper (Part 2)
+
+* Slides *
+
+- you are presenting, the slides are just a support!
+- consider around 1 slide per minute of presentation
+  - of course, there are exeptions and you can go for 2-3 minutes per slide
+- avoide dense slides and huge wall of text
+  - no one reads wall of text!
+  - these slides are for teaching, so here you can find more text
+- prefer figures, diagrams, tables
 
