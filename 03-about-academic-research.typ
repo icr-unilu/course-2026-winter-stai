@@ -388,6 +388,58 @@
 
 = Dealing with papers
 
+== Common structures
+
+* Typical paper in AI / CS *
+
+- _Abstract_ - brief summary of the paper
+- _Introduction_ - context and motivation
+- _Related Work / Background_ - full description of related work
+- _Methodology_ - description of the proposed approach
+- _Experiments / Results_ - description of the experimental setup and results
+- _Discussion_ - analysis of the results and possible limitations
+- _Conclusion_ - summary of the contributions and future work
+
+== How to read a paper
+
+#grid(
+  columns: 2,
+  gutter: 2cm,
+
+  [
+    * My personal suggestion *
+
+    - start from title and abstract
+    - jump to the conclusion
+    - go back to introduction
+    - read until the end
+    - supplementary materials?
+    - if needed, read a second time
+
+  ],
+  [
+    * What to do while reading *
+
+    - understand asap the context of the paper
+    - understand authors' claims / contribution(s)
+    - check if the claims are later confirmed
+    - take notes of the crucial points
+    - if you do not understand something, check if there is a reference with more details
+  ]
+)
+
+
 == How to recognise a good paper
 
-== how to read a paper
+* Rules of thumb *
+
+- positive correlation between _number of citations_ and _quality_ of the paper
+  - in doing so, have a look at the _year_ of publication!
+- you should be able to grasp everything at the first reading
+- if there are experiments
+  - they should be reproducible
+  - datasets and code should be public
+  - there must be statistical tests
+- comparison with other approaches in the literature
+- the paper is in a top-tier conference or journal in the field
+
