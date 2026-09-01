@@ -87,3 +87,33 @@
 // #set heading(numbering: numbly("{1}.", default: "1.1"))
 
 #title-slide()
+
+= Background
+
+== Overview on AI (Part 1)
+
+#align(center)[#image("images/06/ai-map.svg", width: 100%)]
+
+== Overview on AI (Part 2)
+
+#align(center)[#image("images/06/ai-map2.pdf", width: 100%)]
+
+== Local vs. Distributed Representation
+
+#grid(
+  columns: 2,
+  gutter: 1.5cm,
+
+  [
+    #align(center)[#image("images/06/local-distributed-representations.png", width: 100%)]
+  ],
+  [
+      - *Local* \~ _symbolic_:
+        - each symbol has a clear, distinct meaning
+        - e.g., "_bear_" is a symbol denoting a crisp category
+
+      - *Distributed* \~ _sub-symbolic_:
+        - symbols do not have a clear meaning per se, but the whole representation does
+        - e.g., "swim" is a fuzzy capability
+  ]
+)
