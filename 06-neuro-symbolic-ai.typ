@@ -112,8 +112,174 @@
         - each symbol has a clear, distinct meaning
         - e.g., "_bear_" is a symbol denoting a crisp category
 
-      - *Distributed* \~ _sub-symbolic_:
+      - *Distributed* \~ _sub-symbolic_ #cite(label("gelder1990")):
         - symbols do not have a clear meaning per se, but the whole representation does
         - e.g., "swim" is a fuzzy capability
+  ]
+)
+
+== Naming Conventions
+
+#grid(
+  columns: 2,
+  gutter: 1.5cm,
+
+  [
+    *Symbolic KR*
+
+      - involves a _set of symbols_
+      - which can be _combined_ in possibly infinitely many ways
+      - following precise _syntactical rules_
+      - elementary symbols and any admissible combination of them can be _assigned with meaning_
+  ],
+  [
+    *Sub-symbolic KR*
+
+      - _numeric representation_, but also
+      - _probabilistic logic programming_, logic statements combined with probabilities
+      - _fuzzy logic_, logic statements combined with degrees of truth
+      - _Bayesian networks_, graphical models, nodes are symbols and edges are conditional dependencies with probabilities
+  ]
+)
+
+== What is what
+
+#grid(
+  columns: 2,
+  gutter: 1.5cm,
+
+  [
+    *Symbolic AI*
+
+    - _logic programming_
+      - SLD resolution (e.g., Prolog)
+    - _knowledge representation_
+      - semantic web (e.g., OWL)
+      - description logic (e.g., EL, ALC)
+    - _automated reasoning_
+      - theorem proving (e.g., Vampire, E Prover)
+      - model checking (e.g., NuSMV, SPIN)
+    - _planning_:
+      - STRIPS, PDDL
+  ],
+  [
+    *Sub-symbolic AI*
+
+    - _machine learning_
+      - supervised
+      - unsupervised
+      - reinforcement learning
+    - _probabilistic reasoning_
+      - Bayesian networks
+      - Markov networks
+    - _evolutionary algorithms_
+      - genetic algorithms
+  ]
+)
+
+== SLD resolution
+
+#align(center)[#image("images/06/proof-tree.png", height: 100%)]
+
+== Ontology
+
+#align(center)[#image("images/06/ontology-example.png", height: 100%)]
+
+== Planning
+
+#grid(
+  columns: 2,
+  gutter: 1.5cm,
+
+  [
+    #align(center)[#image("images/06/planning.png", height: 100%)]
+  ],
+  [
+    Available actions
+
+    - `grab(X)`: grab block X from the table
+    - `put(X)`: put block X on the table
+    - `stack(X, Y)`: stacks block X on top of block Y
+    - `unstack(X, Y)`: un-stacks block X from the top of block Y
+  ]
+)
+
+
+== Common properties of Symbolic approaches
+
+*What do symbolic approaches have in common?*
+
+- _structured representation_
+  - knowledge is represented in a structured and formal way
+- _algorithmic manipulation of representations_
+  - each approach relies on algorithms that manipulate these structured representations following well-defined rules
+- _crisp semantics_
+  - the meaning of the representation is well-defined
+  - algorithms produce exact results
+- _model driven_
+  - algorithms may work in zero- or few-shot settings
+  - humand model and encode knowlesge in the target representation
+- _clear computational complexity_
+  - decidability, complexity and tractability are well understood
+
+
+== Classification & Regression
+
+#align(center)[#image("images/06/classification-vs-regression.png", height: 100%)]
+
+== Clustering
+
+#align(center)[#image("images/06/clustering.png", height: 100%)]
+
+== Reinforcement Learning
+
+#align(center)[#image("images/01/reinforcement_learning_diagram.svg", height: 100%)]
+
+== Common properties of Sub-symbolic approaches
+
+*What do sub-symbolic approaches have in common?*
+
+- _numerical representation_
+  - knowledge is represented in a less structured way (vectors or matrices)
+- _differentiable manipulation of representations_
+  - algorithms rely on mathematical operations, most commonly undergoing some optimization process
+- _fuzzy/continuous semantics_
+  - representations are from continuous spaces
+  - algorithms may yield fuzzy results
+- _data-driven_
+  - algorithms require large amounts of data to learn the target representation
+- _unclear computational complexity_
+  - strong reliance on greedy / time-limited optimisation methods
+  - lack of theoretical guarantees on the quality of the results
+
+== Long-standing dualism
+
+#align(center)[
+  *Intuition vs. reasoning*
+
+  Esprit de _finess_ vs. Esprit de _géométrie_ #cite(label("pascal_pensees"))\
+  _Cognitive_ vs. _Behavioral_ Psychology #cite(label("Skinner1985"))\
+  _System 1_ (fast, intuitive) vs. _System 2_ (slow, deliberative) #cite(label("kahneman2011"))
+]
+
+#grid(
+  columns: 2,
+  gutter: 1.5cm,
+
+  [
+    *Sub-symbolic AI*
+
+    - provides mechanisms emulating human-like _intuition_
+    - _quick_, _error-prone_, _effective_
+    - requires learning from data
+    - _opaque_, hard to interpret and explain
+  ],
+  [
+    *Symbolic AI*
+
+    - provides mechanisms emulating human-like _reasoning_
+    - _slow_, _precise_, _verifiable_
+    - requires _modeling_ and _encoding_
+    - _transparent_, easy to interpret
   ]
 )
