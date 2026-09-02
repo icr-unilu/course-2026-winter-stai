@@ -283,3 +283,38 @@
     - _transparent_, easy to interpret
   ]
 )
+
+= Neuro-Symbolic AI
+
+== Need for integration
+
+#grid(
+  columns: 2,
+  gutter: 1.5cm,
+
+  [
+    *What is it about?*
+
+    - The Neuro-Symbolic AI (NeSy) community has long recognised the _complementarity_ among symbolic and sub-symbolic approaches.
+    - Focus on _neural networks_ (NN) based sub-symbolic methods, as they are very _flexible_.
+  ],
+  [
+    *Research questions*
+
+    - What is the best way to _integrate_ neural and symbolic architectures?
+    - How should symbolic structures be _represented_ within neural networks and _extracted_ from them?
+    - How should common-sense knowledge be learned and reasoned about?
+    - How can abstract knowledge that is hard to encode logically be handled?
+  ]
+)
+
+== Kautz's taxonomy
+
+*Patterns of _integration_ or _combination_*#cite(label("kautz2022"))
+
++ `Symbolic Neuro-Symbolic`: symbols #sym.arrow vectors #sym.arrow NNs #sym.arrow vectors #sym.arrow symbols
++ `Symbolic[Neuro]`: symbolic module (invokes) #sym.arrow NN #sym.arrow output
++ `Neuro | Symbolic`: NN (cooperates) #sym.arrow symbolic module (cooperates) #sym.arrow NN ...
++ `Neuro-Symbolic #sym.arrow Neuro`: symbolic knowledge (influences) #sym.arrow NN
++ `Neuro #sub(Symbolic)`: symbolic knowledge (constrains) #sym.arrow NN
++ `Neuro[Symbolic]`: symbolic module (embedded in) #sym.arrow NN
