@@ -315,6 +315,30 @@
 + `Symbolic Neuro-Symbolic`: symbols #sym.arrow vectors #sym.arrow NNs #sym.arrow vectors #sym.arrow symbols
 + `Symbolic[Neuro]`: symbolic module (invokes) #sym.arrow NN #sym.arrow output
 + `Neuro | Symbolic`: NN (cooperates) #sym.arrow symbolic module (cooperates) #sym.arrow NN ...
-+ `Neuro-Symbolic #sym.arrow Neuro`: symbolic knowledge (influences) #sym.arrow NN
-+ `Neuro #sub(Symbolic)`: symbolic knowledge (constrains) #sym.arrow NN
++ `Neuro-Symbolic` #sym.arrow `Neuro`: symbolic knowledge (influences) #sym.arrow NN
++ `Neuro`#sub(`Symbolic`): symbolic knowledge (constrains) #sym.arrow NN
 + `Neuro[Symbolic]`: symbolic module (embedded in) #sym.arrow NN
+
+== Type 1 - Symbolic Neuro-Symbolic
+
+#align(center)[#image("images/06/type-01.jpeg", width: 100%)]
+
+== Type 2 - Symbolic[Neuro]
+
+#align(center)[#image("images/06/type-02.jpeg", height: 100%)]
+
+== Type 3 - Neuro | Symbolic
+
+#align(center)[#image("images/06/type-03.jpeg", height: 100%)]
+
+== Type 4 - Neuro-Symbolic #sym.arrow Neuro
+
+#align(center)[#image("images/06/type-04.jpeg", height: 100%)]
+
+== Type 5 - Neuro #sub("Symbolic")
+
+#align(center)[#image("images/06/type-05.jpeg", width: 100%)]
+
+== Type 6 - Neuro[Symbolic]
+
+#align(center)[#image("images/06/type-06.jpeg", width: 100%)]
