@@ -104,7 +104,6 @@ width: 100%,
 #v(0.2em)
 #link(url)[#text(size: 0.75em, fill: blue)[#url]]
 ]
-#v(0.6em)
 ]
 
 = Paper List
@@ -133,18 +132,18 @@ width: 100%,
 
 #slide[
   #paper(
-    [Language Models are Unsupervised Multitask Learners (GPT‑2)],
-    [Alec Radford et al.],
-    2019,
-    [Shows that large Transformer language models trained with a simple next‑token objective can perform a wide range of NLP tasks in a zero‑shot setting, without task‑specific supervision.],
-    "https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf",
+    [Thinking---Fast, Slow, and Artificial: How AI is Reshaping Human Reasoning and the Rise of Cognitive Surrender],
+    [Shaw, Steven D. and Nave, Gideon],
+    2026,
+    [Explores the impact of AI on human reasoning, highlighting the phenomenon of cognitive surrender, where humans increasingly rely on AI for decision-making, potentially diminishing critical thinking skills and altering cognitive processes.],
+    "https://dx.doi.org/10.2139/ssrn.6097646",
   )
 
   #paper(
     [Language Models are Few‑Shot Learners (GPT‑3)],
     [Tom B. Brown et al.],
     2020,
-    [Demonstrates that scaling up Transformer language models to hundreds of billions of parameters leads to strong few‑shot performance on many NLP benchmarks using only in‑context examples as prompts.],
+    [Demonstrates that scaling up Transformer language models to hundreds of billions of parameters leads to strong few‑shot performance on NLP benchmarks using in‑context examples as prompts.],
     "https://arxiv.org/abs/2005.14165",
   )
 ]
