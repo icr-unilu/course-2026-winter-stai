@@ -299,12 +299,13 @@
   - A detailed workplan is prepared
 
 // Slide 29 - Text only
-== Do it Yourself — Agentic RAG Evaluation Assistant
+== Do it Yourself — Hands-on Projects
 
-- Generates test questions from a document collection
-- Runs retrieval and generation experiments
-- Evaluates results with Ragas or RAGChecker-style metrics
-- Reports retrieval misses, hallucinations, and citation failures
+- *3. Agentic RAG Evaluation Assistant*
+  - Generates test questions from a document collection
+  - Runs retrieval and generation experiments
+  - Evaluates results with Ragas or RAGChecker-style metrics
+  - Reports retrieval misses, hallucinations, and citation failures
 
 // Final Slide - Thank You
 == Thank You
