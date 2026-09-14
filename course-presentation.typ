@@ -206,7 +206,7 @@
     - Artificial Intelligence 101
     - Current Trends in AI
     - About Academic Research
-    - How to Recognise a Good Paper
+    - Generative Artificial Intelligence
     - Systematic Literature Review
     - Neuro‑Symbolic AI
   ],
