@@ -132,11 +132,11 @@ width: 100%,
 
 #slide[
   #paper(
-    [Thinking---Fast, Slow, and Artificial: How AI is Reshaping Human Reasoning and the Rise of Cognitive Surrender],
-    [Shaw, Steven D. and Nave, Gideon],
-    2026,
-    [Explores the impact of AI on human reasoning, highlighting the phenomenon of cognitive surrender, where humans increasingly rely on AI for decision-making, potentially diminishing critical thinking skills and altering cognitive processes.],
-    "https://dx.doi.org/10.2139/ssrn.6097646",
+    [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks],
+    [Patrick Lewis et al.],
+    2020,
+    [Introduces RAG models that combine pre-trained parametric and non-parametric memory for language generation, using a dense vector index of Wikipedia accessed with a neural retriever. Achieves state-of-the-art results on open domain QA tasks, generating more specific, diverse, and factual language than parametric-only baselines.],
+    "https://doi.org/10.48550/arXiv.2005.11401",
   )
 
   #paper(
