@@ -305,8 +305,8 @@ Lecture slides and materials are available in the “Latest release” of the co
       ]
 
     - #fa-icon("file-pdf")
-      #link("https://github.com/icr-unilu/course-2026-winter-stai/releases/latest/download/04-how-to-recognise-a-good-paper.pdf")[
-        04 – How to Recognise a Good Paper
+      #link("https://github.com/icr-unilu/course-2026-winter-stai/releases/latest/download/04-generative-ai.pdf")[
+        04 – Generative Artificial Intelligence
       ]
 
     - #fa-icon("file-pdf")
