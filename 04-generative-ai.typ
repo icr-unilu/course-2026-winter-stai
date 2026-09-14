@@ -307,6 +307,11 @@
   - Evaluates results with Ragas or RAGChecker-style metrics
   - Reports retrieval misses, hallucinations, and citation failures
 
+// Final Slide - Bibliography
+== References
+
+#bibliography("genai.bib", title: none, style: "ieee", full: true)
+
 // Final Slide - Thank You
 == Thank You
 
