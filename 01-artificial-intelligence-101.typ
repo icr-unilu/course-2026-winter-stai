@@ -503,8 +503,9 @@ If you want to try yourself: #link("https://www.braitenberg.world/")[braitenberg
   ],
 
   [
-    #image("images/01/subsumption_architecture.png", height: 15em)
     #v(0.6em)
+    #image("images/01/subsumption_architecture.png", width: 20em)
+    #v(3em)
     Example of a subsumption architecture
   ]
 )
