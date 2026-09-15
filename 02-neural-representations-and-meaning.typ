@@ -46,7 +46,7 @@
   ),
   config-info(
     title: [STAI],
-    subtitle: [Current Trends in Artificial Intelligence],
+    subtitle: [Neural Representations and Meaning],
     author: author_list(
       (
         ("Matteo Magnini", "matteo.magnini@uni.lu"),
