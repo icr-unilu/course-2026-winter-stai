@@ -46,7 +46,7 @@
   ),
   config-info(
     title: [STAI],
-    subtitle: [Systematic Literature Review],
+    subtitle: [Neural Networks and AI Alignment],
     author: author_list(
       (
         ("Matteo Magnini", "matteo.magnini@uni.lu"),
