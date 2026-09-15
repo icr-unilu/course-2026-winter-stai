@@ -592,3 +592,36 @@ If you want to try yourself: #link("https://www.braitenberg.world/")[braitenberg
 - _unmanned aerial vehicles (UAV)_ guided by AI algorithms
 - large language models (LLMs) pervading any application
 - agentic AI
+
+== Embodied AI
+
+*Collection of robots I recently saw in Hangzhou*
+
+#grid(
+  columns: 6,
+  gutter: 0.1cm,
+
+  [
+    #image("images/01/coffee-robot.png", height: 8em)
+  ],
+
+  [
+    #image("images/01/food-delivery-robot.png", height: 8em)
+  ],
+
+  [
+    #image("images/01/agriculture-robot.png", height: 8em)
+  ],
+
+  [
+    #image("images/01/dog-robot.png", height: 8em)
+  ],
+
+  [
+    #image("images/01/space-explorer.jpg", height: 12em)
+  ],
+
+  [
+    #image("images/01/barman-robot.png", height: 12em)
+  ]
+)
