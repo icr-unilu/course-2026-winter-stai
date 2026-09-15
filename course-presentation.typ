@@ -296,7 +296,7 @@ Lecture slides and materials are available in the “Latest release” of the co
 
     - #fa-icon("file-pdf")
       #link("https://github.com/icr-unilu/course-2026-winter-stai/releases/latest/download/02-neural-representations-and-meaning.pdf")[
-        02 – Neural Representations and Meaning
+        02 – #text(size: 18pt)[Neural Representations & Meaning]
       ]
 
     - #fa-icon("file-pdf")
@@ -311,7 +311,7 @@ Lecture slides and materials are available in the “Latest release” of the co
 
     - #fa-icon("file-pdf")
       #link("https://github.com/icr-unilu/course-2026-winter-stai/releases/latest/download/05-neural-networks-and-ai-alignment.pdf")[
-        05 – Neural Networks and AI Alignment
+        05 – #text(size: 18pt)[Neural Networks and AI Alignment]
       ]
 
     - #fa-icon("file-pdf")
