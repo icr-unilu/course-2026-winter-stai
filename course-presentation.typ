@@ -204,10 +204,10 @@
     Covered topics:
 
     - Artificial Intelligence 101
-    - Current Trends in AI
+    - Neural Representations and Meaning
     - About Academic Research
     - Generative Artificial Intelligence
-    - Systematic Literature Review
+    - Neural Networks and AI Alignment
     - Neuro‑Symbolic AI
   ],
 
