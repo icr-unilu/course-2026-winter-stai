@@ -219,7 +219,7 @@
 
 == AI, ML, DL
 
-#steps("s06", (0, 1, 2), height: 7cm, width: 100%)
+#steps("s06", (0, 1, 2), height: auto, width: 100%)
 
 == AI, ML, DL
 
