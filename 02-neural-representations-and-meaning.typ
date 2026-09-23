@@ -205,7 +205,7 @@
 #pause
 - What they are and how they work
 #pause
-- How come they reason?
+- How come they "reason"?
 
 // ---------------------------------------------------------------------------
 // PART 1
