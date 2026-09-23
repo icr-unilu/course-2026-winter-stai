@@ -516,7 +516,7 @@ In this case, numbers come from a #hl[similarity measure] calculation
 
 = Sparse vector representations \ #subtitle[Statistical numerical representations]
 
-#speaker-note[MAX 1h:20.
+#[MAX 1h:20.
 
 Sparse vector representations use high-dimensional vectors where most elements are zero, explicitly encoding features in distinct dimensions (e.g., one-hot encoding or term frequency vectors). In contrast, dense vector representations use lower-dimensional vectors with mostly nonzero values, capturing distributed semantics by encoding meaning through learned patterns (e.g., word embeddings like Word2Vec or BERT).]
 
@@ -928,7 +928,7 @@ The target word is used as input to the neural network, which then predicts the 
 
 #align(center, image("images/02/reusable-2.png", width: 100%))
 
-== RLHF/DPO/GPRO/ORPO
+== SFT and RL method (RLHF/DPO/GRPO/ORPO)
 
 #speaker-note[60 m]
 #steps("s68", (1,))
