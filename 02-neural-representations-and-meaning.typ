@@ -112,6 +112,12 @@
   width: width, fill: fill, inset: (x: 0.8em, y: 0.6em), radius: 0.3em, body,
 )
 
+/// 道 as a vector glyph, so it renders even where no CJK font is installed
+/// (e.g. the GitHub build). `light: true` for dark backgrounds.
+#let dao(light: false) = box(baseline: 9%, image(
+  if light { "images/02/dao-light.svg" } else { "images/02/dao-dark.svg" }, height: 1em,
+))
+
 /// Animation states of a diagram rendered from the original PowerPoint.
 /// `states` lists the file suffixes (images/02/<name>-step<N>.pdf); each state
 /// occupies one subslide, the last one stays visible afterwards.
@@ -293,24 +299,24 @@ We can say that AI is largely divided into *symbolic* (or rule-based) and *sub-s
 #focus-slide[
   #uncover(2)[#text(size: 3em, weight: "regular")[Dào]]
   #v(-0.3em)
-  #text(size: 4em)[道]
+  #text(size: 4em)[#dao(light: true)]
 ]
 
-== 道
+== #dao(light: true)
 
 #grid(
   columns: (1fr, 1fr),
   gutter: 1cm,
   align: horizon + center,
   [
-    #text(size: 5em)[道]
+    #text(size: 5em)[#dao()]
     #v(-0.5em)
     #uncover("2-")[#text(size: 1.5em, fill: muted)[The way]]
   ],
   uncover("3-", image("images/02/yin-yang.png", height: 9cm)),
 )
 
-== Dào (道) is "the way"
+== Dào (#dao(light: true)) is "the way"
 
 #grid(
   columns: (1fr, 1fr),
@@ -318,7 +324,7 @@ We can say that AI is largely divided into *symbolic* (or rule-based) and *sub-s
   align: horizon + center,
   image("images/02/thinking-fast-and-slow.jpg", height: 7cm),
   uncover("2-")[
-    #text(size: 1.5em)[道]
+    #text(size: 1.5em)[#dao()]
     #image("images/02/yin-yang.png", height: 6cm)
   ],
 )
@@ -592,7 +598,7 @@ Sparse vector representations use high-dimensional vectors where most elements a
   #set text(size: 0.9em)
   For example:
   - #underline[k-nearest neighbors (k-NN)], #underline[k-means clustering] #sym.arrow.r *points*
-  - Cosine similarity #sym.arrow.r *directions*
+  - #underline[Cosine similarity] #sym.arrow.r *directions*
 ]
 
 == Term Frequency-Inverse Document Frequency
