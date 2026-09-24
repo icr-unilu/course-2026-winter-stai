@@ -213,8 +213,6 @@
 
 = Intro \ #subtitle[Brief intro]
 
-#speaker-note[max 2m]
-
 = AI \ #subtitle[Artificial Intelligence]
 
 == AI, ML, DL
@@ -226,8 +224,6 @@
 #steps("s07", (0, 2, 4, 6, 7))
 
 = AI \ #subtitle[Symbolic vs Sub-symbolic]
-
-#speaker-note[Max 18m]
 
 == Symbolic vs Subsymbolic AI
 
@@ -354,12 +350,10 @@ We can say that AI is largely divided into *symbolic* (or rule-based) and *sub-s
 
 == Hybrid AI -- the "AI Dào"
 
-#speaker-note[Max 50m]
 #steps("s22", (0, 1, 2, 3, 4))
 
 == Hybrid AI -- the "AI Dào"
 
-#speaker-note[Max 50m]
 #align(center, image("images/02/hybrid-ai-dao.png", height: 10.5cm))
 
 == Symbolic vs Subsymbolic AI
@@ -428,7 +422,6 @@ We can say that AI is largely divided into *symbolic* (or rule-based) and *sub-s
 
 == Sub-Symbolic AI (connectionist, data-driven): limitations
 
-#speaker-note[MAX 55m]
 #[
 #set text(size: 0.9em)
 
@@ -446,7 +439,6 @@ We can say that AI is largely divided into *symbolic* (or rule-based) and *sub-s
 ]
 
 #focus-slide[
-  #speaker-note[STOP HERE]
   END PART 1
 ]
 
@@ -456,10 +448,8 @@ We can say that AI is largely divided into *symbolic* (or rule-based) and *sub-s
 
 = Part 2 \ #subtitle["Meaningful" numbers]
 
-#speaker-note[MAX 60m]
 
 #focus-slide[
-  #speaker-note[MAX 60m ---- 9:00]
   From numbers to meaning…
 
   … Let's see the foundations
@@ -485,8 +475,6 @@ The key element in NLP and #underline[computational] linguistics:
 Let's see some ways to turn language into numbers
 
 = Tree Kernels \ #subtitle[Leveraging the linguistic structure of text]
-
-#speaker-note[max 3m]
 
 == NLP
 
@@ -515,10 +503,6 @@ In this case, numbers come from a #hl[similarity measure] calculation
 )
 
 = Sparse vector representations \ #subtitle[Statistical numerical representations]
-
-#[MAX 1h:20.
-
-Sparse vector representations use high-dimensional vectors where most elements are zero, explicitly encoding features in distinct dimensions (e.g., one-hot encoding or term frequency vectors). In contrast, dense vector representations use lower-dimensional vectors with mostly nonzero values, capturing distributed semantics by encoding meaning through learned patterns (e.g., word embeddings like Word2Vec or BERT).]
 
 == Sparse vectors
 
@@ -628,10 +612,6 @@ The #underline[easiest way] to calculate it:
 
 == Normalized TF-IDF (using l2 norm)
 
-#speaker-note[Euclidean normalization is good because it will give us values between 0 and 1.
-
-The L2 norm formula is the square root of the sum of the squares of each value]
-
 #[
 #set text(size: 0.85em)
 #underline[Scikit-learn uses this method:]
@@ -715,10 +695,6 @@ The L2 norm formula is the square root of the sum of the squares of each value]
 
 == TF-IDF with sklearn
 
-#speaker-note[MAX 1h 50m
-
-STOP HERE !!!]
-
 #grid(
   columns: (1.5fr, 1fr),
   gutter: 1em,
@@ -755,10 +731,6 @@ STOP HERE !!!]
 = Dense Vector Representations ("Embeddings") \ #subtitle[Learning numerical representations from data]
 
 == Sparse vs dense vectors
-
-#speaker-note[MAX 1h 50m
-
-STOP HERE !!!]
 
 #[
 #set text(size: 0.9em)
@@ -866,7 +838,6 @@ The target word is used as input to the neural network, which then predicts the 
 #ref-note[Reference: Mikolov 2013, "Efficient Estimation of Word Representations in Vector Space"]
 
 #focus-slide[
-  #speaker-note[STOP HERE]
   END PART 2
 ]
 
@@ -876,8 +847,6 @@ The target word is used as input to the neural network, which then predicts the 
 
 = Part 3 \ #subtitle[LLMs]
 
-#speaker-note[STOP HERE]
-
 = LLMs \ #subtitle[A first glance]
 
 == LLMs
@@ -886,27 +855,22 @@ The target word is used as input to the neural network, which then predicts the 
 
 == LLMs: pre-training and post-training
 
-#speaker-note[MAX 25m]
 #steps("s61", (1, 2, 3, 4, 5, 6, 7, 8))
 
 == What we can do with LLMs
 
-#speaker-note[MAX 25m]
 #steps("s62", (0, 1, 2, 3, 4, 5, 6, 7, 8))
 
 == LLMs: model sizes
 
-#speaker-note[NO / max 22m]
 #steps("s63", (0, 1))
 
 == LLMs: model sizes
 
-#speaker-note[NO / max 22m]
 #steps("s64", (0, 1), width: 100%, height: auto)
 
 == LLMs
 
-#speaker-note[max 22m]
 #grid(
   columns: (1fr, 1fr),
   gutter: 1cm,
@@ -930,7 +894,6 @@ The target word is used as input to the neural network, which then predicts the 
 
 == SFT and RL method (RLHF/DPO/GRPO/ORPO)
 
-#speaker-note[60 m]
 #steps("s68", (1,))
 
 == LLMs
