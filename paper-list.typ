@@ -135,7 +135,7 @@ width: 100%,
 
       #v(0.4em)
 
-      *Language Models are Few-Shot Learners (GPT-3)* \
+      *Human‑level Control through Deep Reinforcement Learning* \
       LESCH Maurice
     ],
 
