@@ -106,6 +106,96 @@ width: 100%,
 ]
 ]
 
+= Timetable
+
+#slide[
+  #table(
+    columns: (4.5cm, 1fr),
+    inset: 0.5em,
+    align: (left, left),
+
+    [*Date*],
+    [*Papers*],
+
+    [29/10/2026],
+    [
+      *BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding* \
+      VALDIVIA AGUERO Jose
+
+      #v(0.4em)
+
+      *Attention Is All You Need* \
+      WAGLOWSKI Mateusz
+    ],
+
+    [05/11/2026],
+    [
+      *Thinking—Fast, Slow, and Artificial: How AI is Reshaping Human Reasoning and the Rise of Cognitive Surrender* \
+      HMIDEH Ayat
+
+      #v(0.4em)
+
+      *Language Models are Few-Shot Learners (GPT-3)* \
+      LESCH Maurice
+    ],
+
+    [12/11/2026],
+    [
+      *Gradient-Based Learning Applied to Document Recognition* \
+      SILVA PINTO Diogo
+
+      #v(0.4em)
+
+      *ImageNet Classification with Deep Convolutional Neural Networks* \
+      HAN Wenbo
+    ],
+
+    [19/11/2026],
+    [
+      *Deep Residual Learning for Image Recognition* \
+      PALMA MEDINA Isaac Fabián
+
+      #v(0.4em)
+
+      *The Neuro-Symbolic Concept Learner: Interpreting Scenes, Words, and Sentences from Natural Supervision* \
+      SEN Diptaraj
+    ],
+
+    [26/11/2026],
+    [
+      *Proximal Policy Optimization (PPO)* \
+      SANATI Amirarsalan
+
+      #v(0.4em)
+
+      *Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm* \
+      AGAKISHIEV Mukhamed
+    ],
+
+    [03/12/2026],
+    [
+      *Learning Explanatory Rules from Noisy Data* \
+      YILDIZ Kaan
+
+      #v(0.4em)
+
+      *Robust Logics* \
+      PLACHKOV Rangel Leonidov
+    ],
+
+    [10/12/2026],
+    [
+      *Efficient Estimation of Word Representations in Vector Space* \
+      SMYRNOV Yehor
+
+      #v(0.4em)
+
+      *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks* \
+      ALBARAQAT Esraa
+    ],
+  )
+]
+
 = Paper List
 
 == Generative AI (Part 1)
