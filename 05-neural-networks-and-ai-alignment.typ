@@ -170,7 +170,13 @@
 
 == Contextual Embeddings: LLMs
 
-#align(center, image("images/05/contextual-embeddings-code.png", height: 10.5cm))
+#grid(
+  columns: (1276fr, 1033fr),
+  gutter: 0.4cm,
+  align: top,
+  image("images/05/contextual-embeddings-code-a.png", width: 100%),
+  image("images/05/contextual-embeddings-code-b.png", width: 100%),
+)
 
 == Contextual Embeddings: LLMs
 
@@ -191,7 +197,14 @@ sentence2 = "He studies programming language"
 
 == Contextual Embeddings: LLMs
 
-#steps("s13", (0, 1), height: 10.5cm)
+#only(1, grid(
+  columns: (1267fr, 1290fr),
+  gutter: 0.4cm,
+  align: top,
+  image("images/05/one-a.png", width: 100%),
+  image("images/05/one-b.png", width: 100%),
+))
+#only("2-", align(center + horizon, image("images/05/two.png", width: 100%)))
 
 == Contextual Embeddings: LLMs
 
@@ -326,11 +339,9 @@ Its output range is symmetric around zero, although the actual activations do no
 Near an input of zero, tanh has a steeper slope than standard sigmoid: its derivative at zero is 1, compared with 0.25 for sigmoid. Therefore, in this region, tanh is more sensitive to small input changes and attenuates the backpropagated signal less.
 
 Tanh still suffers from saturation, where its derivative approaches zero. RNNs using tanh can therefore still experience vanishing gradients; recurrent weights can also cause exploding gradients.]
-#steps("s43", (0, 1, 2, 3), height: 10.5cm)
 
-== Recurrence-based Neural Networks
-
-#steps("s44", (0, 1), width: 100%, height: auto)
+#only(1, align(center, image("images/05/s43-step0.pdf", height: 10.5cm)))
+#only("2-", align(center, image("images/05/s43-step1_new.png", height: 10.5cm)))
 
 == Recurrence-based Neural Networks
 
