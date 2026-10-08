@@ -265,7 +265,7 @@ sentence2 = "He studies programming language"
 
 == Perceptron, the foundation block of ANN
 
-#steps("s30", (0, 1, 3, 5), height: 10.5cm)
+#steps("s30", (0, 1, 2, 3, 4, 5), height: 10.5cm)
 
 == The importance of non-linearity
 
@@ -457,7 +457,6 @@ In other words, the features are likely to be a faithful part of #hl[how the mod
 
 #[
 #set text(size: 0.72em)
-#pause
 #callout(fill: rgb("#DDE3EE"))[
   *Activation patching* is the interpretability version of a controlled experiment. A "clean" and "corrupted" prompts are identical except for one target element, so the model's answer flips.
   If copying a single clean activation into the corrupted run brings the answer back, that activation carries the information the model needs. The task is Indirect Object Identification (Wang et al., 2022).
