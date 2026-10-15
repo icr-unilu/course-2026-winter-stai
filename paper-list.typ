@@ -169,7 +169,12 @@ width: 100%,
       #v(0.4em)
 
       *Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm* \
-      AGAKISHIEV Mukhamed
+      #bold(text(red)[AGAKISHIEV Mukhamed])
+
+      #v(0.4em)
+
+      *Mastering the Game of Go with Deep Neural Networks and Tree Search* \
+      GAO Jerry
     ],
 
     [03/12/2026],
@@ -191,7 +196,7 @@ width: 100%,
       #v(0.4em)
 
       *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks* \
-      ALBARAQAT Esraa
+      #bold(text(red)[ALBARAQAT Esraa])
     ],
   )
 ]
