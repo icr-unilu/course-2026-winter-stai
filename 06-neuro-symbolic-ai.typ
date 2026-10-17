@@ -128,16 +128,19 @@
     *Symbolic KR*
 
       - involves a _set of symbols_
+
       - which can be _combined_ in possibly infinitely many ways
+
       - following precise _syntactical rules_
+
       - elementary symbols and any admissible combination of them can be _assigned with meaning_
   ],
   [
     *Sub-symbolic KR*
 
       - _numeric representation_, but also
-      - _probabilistic logic programming_, logic statements combined with probabilities
-      - _fuzzy logic_, logic statements combined with degrees of truth
+      - _probabilistic logic programming_, logic combined with probabilities
+      - _fuzzy logic_, logic with degrees of truth
       - _Bayesian networks_, graphical models, nodes are symbols and edges are conditional dependencies with probabilities
   ]
 )
@@ -169,9 +172,11 @@
       - supervised
       - unsupervised
       - reinforcement learning
+
     - _probabilistic reasoning_
       - Bayesian networks
       - Markov networks
+
     - _evolutionary algorithms_
       - genetic algorithms
   ]
@@ -205,20 +210,28 @@
 )
 
 
-== Common properties of Symbolic approaches
+== Common properties of Symbolic approaches (Part 1)
 
 *What do symbolic approaches have in common?*
 
 - _structured representation_
   - knowledge is represented in a structured and formal way
+
 - _algorithmic manipulation of representations_
   - each approach relies on algorithms that manipulate these structured representations following well-defined rules
+
 - _crisp semantics_
   - the meaning of the representation is well-defined
   - algorithms produce exact results
+
+== Common properties of Symbolic approaches (Part 2)
+
+*What do symbolic approaches have in common?*
+
 - _model driven_
   - algorithms may work in zero- or few-shot settings
   - humand model and encode knowlesge in the target representation
+
 - _clear computational complexity_
   - decidability, complexity and tractability are well understood
 
@@ -235,19 +248,27 @@
 
 #align(center)[#image("images/01/reinforcement_learning_diagram.svg", height: 100%)]
 
-== Common properties of Sub-symbolic approaches
+== Common properties of Sub-symbolic approaches (Part 1)
 
 *What do sub-symbolic approaches have in common?*
 
 - _numerical representation_
   - knowledge is represented in a less structured way (vectors or matrices)
+
 - _differentiable manipulation of representations_
   - algorithms rely on mathematical operations, most commonly undergoing some optimization process
+
 - _fuzzy/continuous semantics_
   - representations are from continuous spaces
   - algorithms may yield fuzzy results
+
+== Common properties of Sub-symbolic approaches (Part 2)
+
+*What do sub-symbolic approaches have in common?*
+
 - _data-driven_
   - algorithms require large amounts of data to learn the target representation
+
 - _unclear computational complexity_
   - strong reliance on greedy / time-limited optimisation methods
   - lack of theoretical guarantees on the quality of the results
@@ -296,7 +317,10 @@
     *What is it about?*
 
     - The Neuro-Symbolic AI (NeSy) community has long recognised the _complementarity_ among symbolic and sub-symbolic approaches.
+
     - Focus on _neural networks_ (NN) based sub-symbolic methods, as they are very _flexible_.
+
+    - New energy in the field due to large language models (LLMs).
   ],
   [
     *Research questions*
@@ -319,26 +343,72 @@
 + `Neuro`#sub(`Symbolic`): symbolic knowledge (constrains) #sym.arrow NN
 + `Neuro[Symbolic]`: symbolic module (embedded in) #sym.arrow NN
 
+Following figures are taken from a survey by Bhuyan et al.#cite(label("DBLP:journals/nca/BhuyanRTS24"))
+
 == Type 1 - Symbolic Neuro-Symbolic
 
 #align(center)[#image("images/06/type-01.jpeg", width: 100%)]
+#v(2cm)
+Symbols are translated into vector representations,
+processed through NNs to capture intricate patterns,
+and then converted back into symbolic outputs.
 
 == Type 2 - Symbolic[Neuro]
 
-#align(center)[#image("images/06/type-02.jpeg", height: 100%)]
+#grid(
+  columns: 2,
+  gutter: 1.5cm,
+
+  [
+    #align(center)[#image("images/06/type-02.jpeg", width: 100%)]
+  ],
+  [
+    A NN acting as an intermediary between input/output flows and a symbolic AI system
+    The neural components provide insight-driven inputs to the symbolic problem solver,
+    characterizing the loosely coupled but predominantly symbolic nature of these systems.
+  ]
+)
 
 == Type 3 - Neuro | Symbolic
+#grid(
+  columns: (6fr, 4fr),
+  gutter: 1.5cm,
 
-#align(center)[#image("images/06/type-03.jpeg", height: 100%)]
+  [
+    #align(center)[#image("images/06/type-03.jpeg", width: 100%)]
+  ],
+  [
+    A cyclical interaction where a NN and a symbolic AI system operate in a feedback loop,
+    allowing for both procedural learning and logical inference.
+  ]
+)
 
 == Type 4 - Neuro-Symbolic #sym.arrow Neuro
 
-#align(center)[#image("images/06/type-04.jpeg", height: 100%)]
+#grid(
+  columns: (4fr, 6fr),
+  gutter: 1.5cm,
+
+  [
+    A distinct mapping layer explicitly connects the symbolic AI component with the NN.
+    This setup allows for direct translation of symbolic reasoning into neural operations and vice versa
+  ],
+  [
+    #align(center)[#image("images/06/type-04.jpeg", width: 100%)]
+  ]
+)
 
 == Type 5 - Neuro #sub("Symbolic")
 
 #align(center)[#image("images/06/type-05.jpeg", width: 100%)]
+#v(2cm)
+Conversion of symbolic first-order logic (FOL) into tensors,
+processed by a NN, and then reconverted into symbolic FOL.
 
 == Type 6 - Neuro[Symbolic]
 
-#align(center)[#image("images/06/type-06.jpeg", width: 100%)]
+#align(center)[#image("images/06/type-06.jpeg", width: 80%)]
+#v(0.5cm)
+The process begins with a neural unit that feeds into a series of logical units,
+symbolizing the transition from sub-symbolic neural processing to higher-level logical reasoning. 
+This represents an advanced form of integration where the NN output is not just interpreted but also informs and shapes logical unit operations.
