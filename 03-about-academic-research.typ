@@ -56,7 +56,7 @@
       logo: "images/logo_unilu_fr.svg",
       width: 20%,
     ),
-    date: datetime.today().display("[day] [month repr:long] [year]"),
+    date: datetime(year: 2026, month: 10, day: 1).display("[day] [month repr:long] [year]"),
     institution: [University of Luxembourg],
     logo: context {
      if utils.slide-counter.get().first() > 1 [
