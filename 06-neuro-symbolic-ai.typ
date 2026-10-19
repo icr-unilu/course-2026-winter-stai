@@ -412,3 +412,376 @@ processed by a NN, and then reconverted into symbolic FOL.
 The process begins with a neural unit that feeds into a series of logical units,
 symbolizing the transition from sub-symbolic neural processing to higher-level logical reasoning. 
 This represents an advanced form of integration where the NN output is not just interpreted but also informs and shapes logical unit operations.
+
+
+= Symbolic Knowledge Injection & Extraction
+
+== Symbolic Knowledge Injection (SKI)
+
+Use _symbolic knowledge_ to influence how a _sub-symbolic_ predictor learns/draws inferences.
+
+#v(0.4cm)
+#align(center)[*Symbolic knowledge* #sym.arrow *Injector* #sym.arrow *Predictor*]
+
+#v(0.4cm)
+- prior knowledge can complement _scarce_ or _noisy_ data
+
+- rules can express relationships under-represented in the training set
+
+- the injection may affect the _architecture_, the _learning process_, or the _representations_
+
+== SKI - Structuring
+
+#grid(
+  columns: (4fr, 6fr),
+  gutter: 1.5cm,
+  [
+    - the symbolic theory determines part of the _network architecture_
+    - formulas are translated into units and connections
+    - knowledge supplies an _inductive bias_ before learning
+    - trainable components adapt the predictor to the data
+  ],
+  [
+    #image("images/06/workflow-structuring.svg", width: 100%)
+  ],
+)
+#v(1cm)
+The architecture reflects the theory, but trainable components may change its behaviour.
+
+== SKI - Constraining
+
+#grid(
+  columns: (4fr, 6fr),
+  gutter: 1.5cm,
+  [
+    - rules into a _violation cost_
+    - combine data fit with knowledge compliance during learning
+    - continuous interpretations make logical constraints usable in optimisation
+
+    $ L = L_"data" + lambda L_"knowledge" $
+  ],
+  [
+    #image("images/06/workflow-constraining.svg", width: 100%)
+  ],
+)
+
+A _soft penalty_ encourages compliance. Hard guarantees require explicit enforcement.
+
+== SKI - Embedding
+
+#grid(
+  columns: (4fr, 6fr),
+  gutter: 1.5cm,
+  [
+    - encode symbols and relations as _numerical arrays_
+    - supply the representations to the predictor's computation
+    - preserve relevant relationships through the encoding
+  ],
+  [
+    #image("images/06/workflow-embedding.svg", width: 100%)
+  ],
+)
+
+An embedding does not, by itself, guarantee that every symbolic constraint holds.
+
+== SKI - Discussion
+
+- *Knowledge quality*
+  - incorrect or conflicting rules may harm learning
+
+- *Integration strategy*
+  - structuring changes the architecture, constraining guides learning, embedding changes representations
+  - the strategies can be combined
+
+- *Evaluation*
+  - compare against the same predictor without injection
+  - assess predictive performance, rule compliance and robustness to degraded data
+
+== Symbolic Knowledge Extraction (SKE)
+
+Derive _symbolic knowledge_ from a trained sub-symbolic predictor,
+so that it reflects the predictor's behaviour with high _fidelity_.
+
+#v(0.4cm)
+#align(center)[*Trained predictor* #sym.arrow *Extractor* #sym.arrow *Symbolic knowledge*]
+
+#v(0.4cm)
+- _post-hoc explanations_: local predictions or global behaviour
+- _knowledge discovery_: explicit patterns to inspect as domain hypotheses
+- _model compression_: a smaller symbolic surrogate for the original predictor
+
+== SKE - Decompositional approaches
+
+- inspect the predictor's _internal structure_
+
+- analyse weights, biases or activations
+
+- derive symbolic conditions from internal components and combine them
+
+- require access to the model and assumptions about its architecture
+
+#v(0.5cm)
+Meaningful internal components can help interpretation. Large models make extraction harder.
+
+== SKE - Pedagogical approaches
+
+- treat the predictor as a _black box_
+
+- select inputs and query its predictions
+
+- learn a symbolic surrogate from the input/output pairs
+
+- require no access to weights or architecture
+
+#v(0.5cm)
+The sampled inputs determine which parts of the predictor's behaviour can be recovered.
+
+== SKE - Fidelity and interpretability
+
+#grid(
+  columns: 2,
+  gutter: 1.5cm,
+  [
+    *Fidelity vs. accuracy*
+
+    - _fidelity_: agreement with the predictor
+    - _accuracy_: agreement with ground truth
+    - a faithful surrogate can reproduce the predictor's errors and biases
+  ],
+  [
+    *Quality of the explanation*
+
+    - coverage of the input space
+    - number and length of rules
+    - meaningful input features
+    - stability across samples and runs
+  ],
+)
+
+Higher fidelity may require a more complex, less interpretable symbolic representation.
+
+== SKI and SKE - Two directions
+
+#grid(
+  columns: 2,
+  gutter: 1.5cm,
+  [
+    *SKI*
+
+    Symbolic knowledge #sym.arrow predictor
+
+    - start from an explicit theory
+    - influence learning or inference
+    - assess compliance with the theory
+  ],
+  [
+    *SKE*
+
+    Predictor #sym.arrow symbolic knowledge
+
+    - start from a trained predictor
+    - derive an explicit approximation
+    - assess fidelity to the predictor
+  ],
+)
+
+Extracted rules may be _reviewed_ and _injected again_, closing the loop.
+
+= Automatic Knowledge Discovery
+
+== Case study - LLMs as ontology oracles
+
+*Large language models as oracles for instantiating ontologies with domain-specific knowledge*#cite(label("DBLP:journals/kbs/CiattoAMO25"))
+
+#v(0.5cm)
+_KGFiller_: query a pretrained LLM to populate a given ontology schema
+with _individuals_ and _relations_.
+
+// Source for the following case-study slides: paper, Sections 3-5.
+// Values below are from the published experiments, not a current LLM ranking.
+
+== Ontology population - What is given?
+
+#grid(
+  columns: 2,
+  gutter: 1.5cm,
+  [
+    *Input*
+
+    - an ontology _schema_ (_TBox_): class and property definitions
+    - a class hierarchy
+    - natural-language _query templates_
+    - a trained LLM acting as an _oracle_
+  ],
+  [
+    *Output*
+
+    - instances assigned to classes
+    - relations connecting instances
+    - an enriched _ABox_ (assertions about individuals) under the given TBox
+    - assertions for experts to keep, adjust or discard
+  ],
+)
+
+The method populates an existing schema. Schema construction remains a separate task.
+
+== KGFiller - Overview
+
+#align(center)[#image("images/06/kgfiller-roadmap.svg", height: 10.5cm)]
+
+#align(center)[_Population_ #sym.arrow _Relation_ #sym.arrow _Redistribution_ #sym.arrow _Merge_]
+
+// Uploaded roadmap.svg, matching the running example in paper, Fig. 2.
+
+== Population and Relation
+
+#grid(
+  columns: 2,
+  gutter: 1.5cm,
+  [
+    *Population*
+
+    Ask for examples belonging to a class.
+
+    Parse the answer and add candidate individuals to the ontology.
+
+    _Illustrative query:_\
+    Give names of Italian recipes.
+  ],
+  [
+    *Relation*
+
+    Ask for related entities for each relevant individual.
+
+    Add assertions following the property's domain and range.
+
+    _Illustrative query:_\
+    Give the ingredients of margherita pizza.
+  ],
+)
+
+Replies need parsing and validation before becoming useful assertions.
+
+== Redistribution and Merge
+
+#grid(
+  columns: 2,
+  gutter: 1.5cm,
+  [
+    *Redistribution*
+
+    - relation queries may introduce individuals in broad classes
+    - ask the oracle for the best matching _subclass_
+    - repeat down the hierarchy
+
+    E.g., place an ingredient in the most specific available food category.
+  ],
+  [
+    *Merge*
+
+    - shortlist _syntactically similar_ individuals
+    - ask whether they denote the same entity
+    - merge the assertions if the answer is positive
+
+    E.g., alternative names may denote the same ingredient.
+  ],
+)
+
+== Nutritional ontology
+
+#text(size: 0.75em)[
+  54 classes, rooted in _Edible_, initially no individuals. `ingredientOf` connects ingredients to recipes.\
+  Schema designed from the authors' common sense, without clinical validation.
+]
+
+#align(center)[#image("images/06/kgfiller-food-ontology.svg", height: 9.3cm)]
+
+// Exported ontology_skeleton.svg from gciatto/presentation-llm4kg.
+
+== How to evaluate the generated knowledge?
+
+*Manual assessment* of generated individuals and relations.
+
+- individual errors: misplaced, incorrect, meaningless, class-like or duplicate
+- relation errors: assertions linking entities in an incorrect way
+- the authors assess independently and resolve disagreement by majority vote
+
+#v(0.3cm)
+$ Q = (T_I - T_E + T_R - E_"wr") / (T_I + T_R) $
+
+#text(size: 0.8em)[
+  $T_I$: individuals, $T_E$: individuals affected by errors,\
+  $T_R$: relations, $E_"wr"$: wrong relations.
+]
+
+== Results - Quality and quantity
+
+#text(size: 0.85em)[
+  #table(
+    columns: (2fr, 1fr, 1fr, 1fr),
+    align: (left, right, right, right),
+    inset: 0.5em,
+    [*LLM oracle*], [*Individuals*], [*Relations*], [*$Q$*],
+    [GPT 3.5 Turbo], [511], [736], [0.924],
+    [GPT 4 Turbo], [735], [1,061], [0.896],
+    [Nous Hermes], [1,121], [1,222], [0.851],
+    [Mistral], [1,176], [1,211], [0.774],
+  )
+]
+
+- more generated knowledge does not necessarily mean _higher quality_
+- GPT 3.5 Turbo yields the highest $Q$ among the eight tested models
+- the evaluation concerns this _ontology_ and these _experimental settings_
+
+#text(size: 0.7em)[Source: paper, Table 2. Selected rows from the published experiments.]
+
+== Comparison with Harvest
+
+#grid(
+  columns: (4fr, 6fr),
+  gutter: 1cm,
+  [
+    - same _food ontology schema_
+    - Harvest's best reported $Q$: _0.2646_
+    - KGFiller with GPT 3.5 Turbo: _0.924_
+
+    Results support the approach on this case study.
+
+    #v(0.4cm)
+    #text(size: 0.8em)[
+      *RIE*: relative individual error.\
+      *RRE*: relative relation error.\
+      Lower errors and higher $Q$ are better.
+    ]
+  ],
+  [
+    #image("images/06/kgfiller-vs-harvest.pdf", width: 100%)
+  ],
+)
+
+#text(size: 0.7em)[Source: paper, Section 4.6, Tables 2 and 5.]
+
+== Automatic discovery - Discussion
+
+#grid(
+  columns: 2,
+  gutter: 1.5cm,
+  [
+    *What we gain*
+
+    - faster initial ontology population
+    - explicit knowledge from a neural oracle
+    - incremental enrichment of existing ontologies
+    - a starting point for expert revision
+  ],
+  [
+    *What remains open*
+
+    - hallucinated entities, wrong relations and model biases
+    - dependence on prompts and model versions
+    - factual provenance and independent validation
+    - generalisation beyond the tested domain
+  ],
+)
+
+Knowledge elicited from a model is not automatically a _new scientific discovery_.

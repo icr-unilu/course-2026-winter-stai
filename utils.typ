@@ -101,3 +101,17 @@
     title-color: rgb("#e65100"),
   )
 }
+
+#let resource-placeholder(name, description, height: 4cm) = block(
+  width: 100%,
+  height: height,
+  fill: luma(245),
+  stroke: (paint: luma(170), thickness: 0.6pt, dash: "dashed"),
+  inset: 0.6em,
+)[
+  #align(center + horizon)[
+    #text(size: 0.8em)[*Resource placeholder* \\ #description]
+    #v(0.3em)
+    #text(size: 0.6em, font: "monospace")[#name]
+  ]
+]
