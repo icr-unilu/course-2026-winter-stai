@@ -510,7 +510,9 @@ so that it reflects the predictor's behaviour with high _fidelity_.
 - _knowledge discovery_: explicit patterns to inspect as domain hypotheses
 - _model compression_: a smaller symbolic surrogate for the original predictor
 
-== SKE - Decompositional approaches
+== SKE - Translucency (Part 1)
+
+*Decompositional approaches*
 
 - inspect the predictor's _internal structure_
 
@@ -523,7 +525,9 @@ so that it reflects the predictor's behaviour with high _fidelity_.
 #v(0.5cm)
 Meaningful internal components can help interpretation. Large models make extraction harder.
 
-== SKE - Pedagogical approaches
+== SKE - Translucency (Part 2)
+
+*Pedagogical approaches*
 
 - treat the predictor as a _black box_
 
@@ -586,6 +590,10 @@ Higher fidelity may require a more complex, less interpretable symbolic represen
 )
 
 Extracted rules may be _reviewed_ and _injected again_, closing the loop.
+
+== SKI-SKE loop
+
+#image("images/06/ske-ski-workflow.pdf", width: 100%)
 
 = Automatic Knowledge Discovery
 
@@ -760,28 +768,3 @@ $ Q = (T_I - T_E + T_R - E_"wr") / (T_I + T_R) $
 )
 
 #text(size: 0.7em)[Source: paper, Section 4.6, Tables 2 and 5.]
-
-== Automatic discovery - Discussion
-
-#grid(
-  columns: 2,
-  gutter: 1.5cm,
-  [
-    *What we gain*
-
-    - faster initial ontology population
-    - explicit knowledge from a neural oracle
-    - incremental enrichment of existing ontologies
-    - a starting point for expert revision
-  ],
-  [
-    *What remains open*
-
-    - hallucinated entities, wrong relations and model biases
-    - dependence on prompts and model versions
-    - factual provenance and independent validation
-    - generalisation beyond the tested domain
-  ],
-)
-
-Knowledge elicited from a model is not automatically a _new scientific discovery_.
