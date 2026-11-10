@@ -146,14 +146,14 @@ width: 100%,
 
       #v(0.4em)
 
-      *ImageNet Classification with Deep Convolutional Neural Networks* \
-      HAN Wenbo
+      *Deep Residual Learning for Image Recognition* \
+      PALMA MEDINA Isaac Fabián
     ],
 
     [19/11/2026],
     [
-      *Deep Residual Learning for Image Recognition* \
-      PALMA MEDINA Isaac Fabián
+      *ImageNet Classification with Deep Convolutional Neural Networks* \
+      HAN Wenbo
 
       #v(0.4em)
 
